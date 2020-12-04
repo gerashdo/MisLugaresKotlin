@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margen_botones"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="25sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnPreferencias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:insetTop="6dp"
+                android:insetBottom="6dp"
+                android:text="@string/preferencias"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btnAcercaDe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:insetTop="6dp"
+                android:insetBottom="6dp"
+                android:text="@string/acerca_de"
+                android:layout_margin="5dp"
+                />
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="6dp"
+                android:insetBottom="6dp"
+                android:text="@string/salir"
+                android:layout_margin="5dp"
+                />
+
+            <Button
+                android:id="@+id/btnMostrarLugares"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:insetTop="6dp"
+                android:insetBottom="6dp"
+                android:text="@string/mostrar_lugares"
+                android:layout_margin="5dp"
+                />
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>
