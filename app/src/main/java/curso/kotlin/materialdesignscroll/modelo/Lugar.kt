@@ -1,4 +1,4 @@
-package curso.kotlin.mislugares
+package curso.kotlin.materialdesignscroll.modelo
 
 data class Lugar (val nombre: String,
                   var direccion: String = "",

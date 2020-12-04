@@ -1,4 +1,4 @@
-package curso.kotlin.materialdesignscroll
+package curso.kotlin.materialdesignscroll.presentacion
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import curso.kotlin.materialdesignscroll.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -55,12 +56,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun lanzarAcercaDe(view:View? = null) {
-        val i = Intent(this,AcercaDeActivity::class.java)
+        val i = Intent(this, AcercaDeActivity::class.java)
         startActivity(i)
     }
 
     fun lanzarPreferencias(view:View? = null) {
-        val i = Intent(this,PreferenciasActivity::class.java)
+        val i = Intent(this, PreferenciasActivity::class.java)
         startActivity(i)
     }
 }

@@ -1,4 +1,4 @@
-package curso.kotlin.mislugares
+package curso.kotlin.materialdesignscroll.modelo
 
 data class GeoPunto (val longitud: Double, val latitud: Double){
     companion object {

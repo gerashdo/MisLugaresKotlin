@@ -1,6 +1,7 @@
-package curso.kotlin.mislugares
-import java.util.ArrayList;
-import java.util.List;
+package curso.kotlin.materialdesignscroll.datos
+
+import curso.kotlin.materialdesignscroll.datos.RepositorioLugares
+import curso.kotlin.materialdesignscroll.modelo.Lugar
 
 class LugaresLista: RepositorioLugares {
     val listaLugares = mutableListOf<Lugar>()

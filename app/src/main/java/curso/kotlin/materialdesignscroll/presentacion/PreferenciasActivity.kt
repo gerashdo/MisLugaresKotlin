@@ -1,4 +1,4 @@
-package curso.kotlin.materialdesignscroll
+package curso.kotlin.materialdesignscroll.presentacion
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 class PreferenciasActivity:AppCompatActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportFragmentManager.beginTransaction().replace(android.R.id.content,PreferenciasFragment()).commit()
+        supportFragmentManager.beginTransaction().replace(android.R.id.content,
+            PreferenciasFragment()
+        ).commit()
     }
 }

@@ -1,4 +1,8 @@
-package curso.kotlin.mislugares
+package curso.kotlin.materialdesignscroll.datos
+
+import curso.kotlin.materialdesignscroll.modelo.GeoPunto
+import curso.kotlin.materialdesignscroll.modelo.Lugar
+import curso.kotlin.materialdesignscroll.modelo.TipoLugar
 
 interface RepositorioLugares {
     fun elemento (id: Int): Lugar // Devuelve el elemento dado su id
@@ -9,8 +13,11 @@ interface RepositorioLugares {
     fun actualiza (id: Int, lugar: Lugar) // Remplaza un elemento
 
     fun añadeEjemplos() {
-        aniade(Lugar("Escuela Politécnica Superior de Gandía",
+        aniade(
+            Lugar("Escuela Politécnica Superior de Gandía",
             "C/ Paranimf, 1 46730 Gandia (SPAIN)", GeoPunto(-0.166093,
-                38.995656),TipoLugar.EDUCACION,"" , 962849300,"http://www.epsg.upv.es","Good", valoracion = 3f))
+                38.995656),
+                TipoLugar.EDUCACION,"" , 962849300,"http://www.epsg.upv.es","Good", valoracion = 3f)
+        )
     }
 }

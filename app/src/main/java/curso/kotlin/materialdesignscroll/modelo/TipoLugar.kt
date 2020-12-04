@@ -1,4 +1,4 @@
-package curso.kotlin.mislugares
+package curso.kotlin.materialdesignscroll.modelo
 
 enum class TipoLugar private constructor(val texto: String, val recurso: Int) {
     OTROS("Otros",5),
