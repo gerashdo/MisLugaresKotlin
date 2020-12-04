@@ -7,9 +7,13 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import curso.kotlin.materialdesignscroll.Aplicacion
 import curso.kotlin.materialdesignscroll.R
+import curso.kotlin.materialdesignscroll.casos_uso.CasosUsoLugar
 
 class MainActivity : AppCompatActivity() {
+    val lugares by lazy { (application as Aplicacion).lugares }
+    val usoLugar by lazy { CasosUsoLugar(this,lugares) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
